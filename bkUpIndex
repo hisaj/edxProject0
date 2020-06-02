@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage CS50</title>
+        <link href="stylesheet.css" rel="stylesheet" type ="text/css">     
+    </head>
+    <body>
+        Hello, world!
+        <div id="heads">
+            <table >
+                <tr class="headingTable">
+                    <td class="tbd"> <a href="about.html"> About </a> </td>
+                    <td class="tbd"> <a href="education.html"> Education </a> </td>
+                    <td class="tbd"> <a href="hobbies.html"> Hobbies </a> </td>
+                    <td class="tbd"> <a href="goal.html"> Goal </a> </td>
+                </tr>
+            </table>
+       </div>
+       <div id="bodi">
+           <p> Here is the body </p> 
+           
+       </div>
+       <div id="tail">
+        <p> Here is the footer </p> 
+       </div>
+    </body>
+</html>
