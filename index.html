@@ -10,6 +10,7 @@
 </head>
     <body>
         <h3> Hello, world! </h3>
+        <h6 id="top"></h6>
         <div id="heads">
             <table >
                 <tr class="headingTable">
@@ -21,34 +22,139 @@
             </table>
        </div>
        <div class="bodie">
+           
            <p> Here is the home page </p> 
            <div class="container">
                 <div class="row">
                 <div class="col">
-                    Not Easy
+                    <a href="#uninteresting"> Uninteresting </a>
                 </div>
                 <div class="col-6">
-                    2 of 3 (wider)
+                    <a href="#Info"> Information </a>
                 </div>
                 <div class="col">
-                    3 of 3
+                    <a href="#Galary"> Galary </a>
                 </div>
                 </div>
                 <div class="row">
                 <div class="col">
-                    1 of 3
+                    <a href="#notes"> Notes </a>
                 </div>
                 <div class="col-5">
-                    2 of 3 (wider)
+                    <a href="#messageme"> Message me </a>
                 </div>
                 <div class="col">
-                    3 of 3
+                    <a href="#jargon"> Jargon </a>
                 </div>
                 </div>
           </div>
+          <h4 id="Info"><a href="#top">Information</a></h4>
+          <p> Using a built in date in PL/I. A mainframe programing language.
+            DCL DATE = YYMMDD (6), DATETIME = YYYYMMDDHHMISS999 (17) 
+            DCL TODAY_DAY  = SUBSTR(TODAY_DATE,6,2); 
+            DCL TODAY_MONT = SUBSTR(TODAY_DATE,4,2); 
+            DCL TODAY_YR   = SUBSTR(TODAY_DATE,2,2);   
+            DCL F_TYPE(7) CHAR(1)  INIT('1','2'.'3','4',    Example of (Array)
+            '5','6','7');   
+            File declaration 
+            01 ITRANS-RECORD.
+            03	I-REC_TYPE			CHAR(1).
+            03	I-REST_OF_DATA		CHAR(79)   </p>
+          <h4 id="uninteresting"><a href="#top">Uninteresting</a></h4>
+          <p> Dumping of collected in my knowledge exploration
+            TRANSLATE_XM: PROCEDURE OPTIONS(MAIN); 
+            DECLARE NEWSTRING CHARACTER(80) VARYING; 
+            DECLARE TRANSLATION CHARACTER(128); 
+            DECLARE I FIXED; 
+            DECLARE COLLATE BUILTIN;              
+            /* change case of letters in sentence */ 
+            TRANSLATION = COLLATE;         
+            DO I=66 TO 91;  /* replace upper with lower */ 
+            SUBSTR(TRANSLATION,I,1) = SUBSTR(COLLATE,I+32,1); 
+            END; 
+            DO I=98 TO 123; /* replace lower with upper */ 
+            SUBSTR(TRANSLATION,I,1) = SUBSTR(COLLATE,I-32,1); 
+            END; 
+            NEWSTRING = 
+            TRANSLATE('THE QUICK BROWN fox JUMPS OVER THE LAZY dog',TRANSLATION); 
+            PUT SKIP LIST(NEWSTRING); 
+            END TRANSLATE_XM;  
+          </p>
+          <h4 id="notes"><a href="#top">Notes</a></h4>
+          <p> https://www.redbooks.ibm.com/  </br>
+             https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zosInternetLibrary?OpenDocument
+          </br>
+            -----Competition Master of Mainfraime ---------------
+        </br>
+            http://mtm2019.mybluemix.net/wall_of_fame/wall_of_fame.html 
+        </br>
+            Error codes messages link
+            https://www.ibm.com/support/knowledgecenter/SSY2V3_4.4.0/com.ibm.entpli.doc_4.4/msg.pdf
+        </br>
+            https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.ieam700/iea3m7_IEB_messages.htm
+            </br>
+            oncode pli
+            https://www.techagilist.com/mainframe/jcl/pl1-oncode/
+        </br>
+            Abend error code link
+            https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.idac400/rc10.htm
+        </br>
+            https://www.ibm.com/support/knowledgecenter/en/SSQJW7_5.7.0/com.ibm.storage.tdmf.help.doc/f2c_tdmf_abend_codes.html
+            Runtime error code
+            https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.ceea900/plimsgs.htm
+        </br>
+            MAXCC RETURN CODE AND MEANING
+            https://www.ibm.com/support/knowledgecenter/en/SS2L7A_5.2.0/doc/ccv-reason-codes.html
+        </br>
+            Cobol program file return status code and meaning in mainfraime
+            http://ibmmainframes.com/references/a27.html   </p>
+
+          <h4 id="Galary"><a href="#top">Galary</a></h4>
+            <div class="img2">
+             <img src="imgs\cloud.jpg" alt="Sunset" width="250" height="200" >
+             </div>
+           </div class="img3"> 
+             <img src="imgs\midair.jpg" alt="terrain view from mid-air" width="200" height="250" > 
+            </div>       
+          
+          <h4 id="messageme"><a href="#top">Message Me</a> </h4>
+          <p> Do you have any comment or question. Get in touch </p>
+          <form>
+            <a href="contact.html">Get in touch</a>
+          </form>
+          <h4 id="jargon"><a href="#top">Jargon</a></h4>
+         <p> This makes no sense but it does makes sense
+            Example of compile and run jcl used in mainframe.
+        </br>
+           //*compile
+
+            //LIT0021      JCLLIB ORDER=PLI.V3R6.SIBMZPRC                     
+            //CPL          EXEC PROC=IBMZCPL,LNGPRFX='PLI.V3R6',REGION=0M,    
+            //             PARM=SOURCE                                        
+            //SYSPRINT     DD SYSOUT=*                                        
+            //LKED.SYSLMOD DD DSN=LIT0021.LYIT11.LOADLIB(P2004143),DISP=OLD   
+            //PLI.SYSIN    DD DSN=LIT0021.LYIT11.PL1(P2004143),DISP=SHR       
+        </br>
+            --run   
+            //LIT0021  JOB UNILEVEL,CLASS=A,MSGCLASS=H,NOTIFY=&SYSUID            
+            //JOBLIB   DD  DSN=LIT0021.LYIT11.LOADLIB,DISP=SHR                   
+            //DEL1     EXEC PGM=IEFBR14                                          
+            //DELITRS  DD DSN=LIT0021.LYIT11.ITRANS.OUTPUT.P2004143,             
+            //            DISP=(MOD,DELETE,DELETE),                              
+            //            SPACE=(TRK,(1,1),RLSE),                                
+            //            DCB=(RECFM=FBA,LRECL=80,BLKSIZE=0)                     
+            //RUNIT    EXEC PGM=P2004143                                         
+            //SYSPRINT DD  SYSOUT=*                                              
+            //ITRANS   DD  DSN=LIT0021.LYIT11.ITRANS.DATA.P2004143,DISP=SHR      
+            //OREPORT  DD DSN=LIT0021.LYIT11.ITRANS.OUTPUT.P2004143,             
+            //            DISP=(NEW,CATLG,DELETE),                               
+            //            SPACE=(TRK,(1,1),RLSE),                                
+            //            DCB=(RECFM=FBA,LRECL=80,BLKSIZE=0)                     
+              
+          All information to be updated but for now, this is a sample showcase </p>
        </div>
        <div id="tail">
-        <p> Here is the footer </p> 
+        <p> Courtesy self-effort </p> 
        </div>
     </body>
 </html>

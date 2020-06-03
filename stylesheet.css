@@ -3,6 +3,10 @@ h3{
     font-style: italic;
     color: rgb(235, 117, 117);
 }
+h4{
+    font-style: italic;
+    color: rgb(134, 86, 54);
+}
 #heads{
     border: 0.5px snow;
     padding: 5px;
@@ -15,7 +19,7 @@ h3{
 #tail{
     background-color: khaki;
     text-align: center;
-}
+}   
 .headingTable{
     border:2px solid grey;
     border-collapse: collapse;
@@ -45,14 +49,32 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300px;
     font-style: inherit;
-    color: #3f6ac0;
+    color: #3f6a00;
     padding-top: 15px;
+}
+ul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: cornflowerblue;
+}
+ol{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: chocolate;
 }
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
+}
+.img2{
+    
+    margin-left: 0px;
+    margin-right: 5px
+}
+.img3{
+    padding-right: 20px;
 }
 .footer{
     background-color: khaki;
