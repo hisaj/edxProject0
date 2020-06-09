@@ -52,6 +52,10 @@ p{
     color: #3f6a00;
     padding-top: 15px;
 }
+p::selection{
+    color: indianred;
+    background-color: aliceblue;
+}
 ul{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
@@ -62,19 +66,27 @@ ol{
     font-size: large;
     color: chocolate;
 }
-img{
+ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .img2{
-    
-    margin-left: 0px;
-    margin-right: 5px
+    margin-left: -700px;
+    margin-right: 50px;
 }
-.img3{
-    padding-right: 20px;
+input{
+   padding-left: 3px;   
+   border-radius: 5px; 
+}
+label{
+    width: 5em;
+}
+.comment{
+    margin-left: 5em;
+    height: 10em;
+    border-radius: 5px; 
 }
 .footer{
     background-color: khaki;
